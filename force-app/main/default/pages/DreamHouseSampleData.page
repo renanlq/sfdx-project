@@ -6,12 +6,12 @@
     
         <apex:remoteObjects >
     
-            <apex:remoteObjectModel name="Bot_Command__c" jsShorthand="BotCommand">
+            <!-- <apex:remoteObjectModel name="Bot_Command__c" jsShorthand="BotCommand">
                 <apex:remoteObjectField name="Name" jsShorthand="name"/>
                 <apex:remoteObjectField name="Apex_Class__c" jsShorthand="apexClass"/>
                 <apex:remoteObjectField name="Pattern__c" jsShorthand="pattern"/>
                 <apex:remoteObjectField name="Sample_Utterance__c" jsShorthand="sampleUtterance"/>
-            </apex:remoteObjectModel>
+            </apex:remoteObjectModel> -->
 
             <apex:remoteObjectModel name="Broker__c" jsShorthand="Broker">
                 <apex:remoteObjectField name="Name" jsShorthand="name"/>

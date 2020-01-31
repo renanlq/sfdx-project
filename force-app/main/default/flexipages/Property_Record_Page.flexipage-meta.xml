@@ -100,10 +100,10 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <componentInstances>
+        <!-- <componentInstances>
             <componentName>PropertyDaysOnMarketChart</componentName>
-        </componentInstances>
-        <componentInstances>
+        </componentInstances> -->
+        <!-- <componentInstances>
             <componentInstanceProperties>
                 <name>latField</name>
                 <value>Location__Latitude__s</value>
@@ -117,7 +117,7 @@
                 <value>Name</value>
             </componentInstanceProperties>
             <componentName>MapCard</componentName>
-        </componentInstances>
+        </componentInstances> -->
         <componentInstances>
             <componentInstanceProperties>
                 <name>animations</name>
