@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	name="Default ruleset used for Salesforce.com Apex" 
+	xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+	<description>Apex PMD Rules</description>
+
+    <rule ref="category/apex/bestpractices.xml"/>
+    <rule ref="rulesets/apex/braces.xml"/>
+    <rule ref="rulesets/apex/complexity.xml"/>
+    <rule ref="rulesets/apex/empty.xml"/>
+    <rule ref="rulesets/apex/metrics.xml"/>
+    <rule ref="rulesets/apex/performance.xml"/>
+    <rule ref="rulesets/apex/ruleset.xml"/>
+    <rule ref="rulesets/apex/security.xml"/>
+    <rule ref="rulesets/apex/style.xml"/>
+	<rule ref="category/apex/errorprone.xml/AvoidHardcodingId" />
+
+	<!-- custom -->
+	<rule ref="category/apex/codestyle.xml/ClassNamingConventions"
+		message="Nome da classe não respeita regras de nomenclatura. Ex. NomeClasse, NomeClasseController, NomeClasseTest" >
+		<priority>1</priority>
+		<properties>
+			<property name="testClassPattern" value="^(?!((?i:bibr)))[A-Z][a-zA-Z]*[Test,TestFactory]$" />
+			<property name="abstractClassPattern" value="^(?!((?i:bibr)))[A-Z][a-zA-Z]*$" />
+			<property name="classPattern" value="^(?!((?i:bibr)))[A-Z][a-zA-Z]*[Batch,Controller,ControllerExtension,DAO,Factory,Trigger,TriggerHandler]$" />
+			<property name="interfacePattern" value="^[I](?!((?i:bibr)))[A-Z][a-zA-Z]*$" />
+			<property name="enumPattern" value="^(?!((?i:bibr|b2c)))[A-Z][a-zA-Z0-9]*$" />
+		</properties>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/LocalVariableNamingConventions"
+		message="Nome da variável não respeita regras de nomenclatura. Ex. nomeVariavel, nomeVariavel1, nomeVariavel2">
+		<priority>1</priority>
+		<properties>
+			<property name="finalLocalPattern" value="^(?!((?i:bibr|b2c)))[a-z][a-zA-Z0-9]*$" />
+			<property name="localPattern" value="^(?!((?i:bibr|b2c)))[a-z][a-zA-Z0-9]*$" />
+		</properties>
+	</rule>
+	<rule ref="category/apex/codestyle.xml/MethodNamingConventions"
+		message="Nome do método não respeita regras de nomenclatura. Ex. metodoNome" >
+		<priority>1</priority>
+		<properties>
+			<property name="testPattern" value="^(?!((?i:bibr|b2c)))[a-z][a-zA-Z0-9]*$" />
+			<property name="staticPattern" value="^(?!((?i:bibr|b2c)))[a-z][a-zA-Z0-9]*$" />
+			<property name="instancePattern" value="^(?!((?i:bibr|b2c)))[a-z][a-zA-Z0-9]*$" />
+		</properties>
+	</rule>
+</ruleset>
