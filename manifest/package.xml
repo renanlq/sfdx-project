@@ -307,10 +307,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>EscalationRules</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>EventDelivery</name>
     </types>
     <types>
@@ -408,10 +404,6 @@
     <types>
         <members>*</members>
         <name>MatchingRule</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>MatchingRules</name>
     </types>
     <types>
         <members>*</members>
