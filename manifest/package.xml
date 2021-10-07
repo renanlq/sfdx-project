@@ -38,10 +38,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>AssignmentRule</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>AssignmentRules</name>
     </types>
     <types>
