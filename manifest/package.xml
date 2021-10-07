@@ -407,10 +407,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>ManagedTopic</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>ManagedTopics</name>
     </types>
     <types>
